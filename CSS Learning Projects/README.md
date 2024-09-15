@@ -1,4 +1,4 @@
-I made these Projects while learnining CSS fromm freeCodeCampn Responsive Web Design Course
+I made these Projects while learnining CSS fromm freeCodeCamp Responsive Web Design Course
 There are 5 sets
 
 Set-1:-
