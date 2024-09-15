@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mac Feedback Form</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Mac Gaming Feedback 2024</h1>
+    <p id="description">We would like feedback from Mac users on their experience with gaming on Mac, particularly considering the increased efforts we have made to improve the experience and optimize overall gaming performance.</p>
+
+    <form id="survey-form">  
+        <label id="name-label">Enter Your Name:<input id="name" name="name" type="text" class="form" placeholder="Full Name" required/></label>
+
+      <label id="email-label" >Enter Your email:<input id="email" name="email" type="email" class="form" required placeholder="@icloud.com"></label>
+      
+      <label id="number-label">Age:<input id="number" type="number" min="10" max="120" required placeholder="age" /></label> 
+
+<label>Which Apple Silicon You Use?
+  <select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">M1</option>
+    <option value="2">M1 PRO</option>
+    <option value="3">M1 MAX</option>
+    <option value="4">M2</option>
+    <option value="5">M2 PRO</option>
+    <option value="6">M2 MAX</option>
+    <option value="7">M3</option>
+    <option value="8">M4</option>
+  </select>  
+</label>  
+
+<fieldset>
+        <legend>Mac type (required)</legend>
+        <label for="mac-air"><input id="mac-air" type="radio" value="macbook-air"name="mac-type" class="inline" checked /> Macbook Air</label>
+        <label for="mac-pro"><input id="mac-pro" type="radio" value="macbook-pro"name="mac-type" class="inline" /> Macbook Pro</label>
+         <label for="mac-mini"><input id="mac-mini" type="radio" value="mac-mini"name="mac-type" class="inline" checked /> Mac Mini</label>
+        <label for="mac-studio"><input id="mac-studio" type="radio" value="mac-studio"name="mac-type" class="inline" checked /> Mac Studio</label>
+        <label for="imac"><input id="imac" type="radio" value="i-mac"name="mac-type" class="inline" checked /> iMac</label>
+        <label for="mac-pro"><input id="mac-pro" type="radio" value="mac-pro"name="mac-type" class="inline" checked /> Mac Pro</label>
+      </fieldset>
+<fieldset>
+  <legend>Have you tried these games?</legend>
+<label>
+  Resident Evil 4<input type="checkbox" value="RE4"/>
+</label>
+<label>
+  Resident Evil Village<input type="checkbox" value="REV"/>
+</label>
+<label>
+  Honkai Impact 3rd<input type="checkbox" value="HI3"/>
+</label>
+<label>
+  Genshin Impact<input type="checkbox" value="GI"/>
+</label>
+<label>
+  None of the Above<input type="checkbox" value="NIL"/>
+</label>  
+</fieldset>
+
+<label for="remarks">Remarks in detail:
+          <textarea id="remarks" name="remarks" rows="5" cols="40" placeholder="I liked Genshin Impact because..."></textarea>
+        </label>
+
+        </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+
+    </form>
+  </body>    
+</html>
