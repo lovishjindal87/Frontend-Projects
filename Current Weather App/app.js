@@ -48,9 +48,18 @@ function showWeatherReport(weather){
     weather_iconEl.innerHTML = `<img src="http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png">
     <div class="weather" id="weather">${weather.weather[0].main}</div>
     `
-    let cityname = `${weather.name}` ;
-    document.body.style.background = "url('https://source.unsplash.com/1600x900/?" + cityname +"') no-repeat"
-    document.body.style.backgroundSize = "cover"  
+
+    let weatherCondition = weather.weather[0].main.toLowerCase(); // Convert to lowercase
+    let bgImages = {
+        "clear": "sunny",
+        "clouds": "cloudy",
+        "rain": "rainy",
+        "drizzle": "drizzle",
+        "thunderstorm": "thunderstorm",
+        "snow": "snow",
+        "mist": "fog",
+        "haze": "haze"
+    };
 }
 
 // Date manage
